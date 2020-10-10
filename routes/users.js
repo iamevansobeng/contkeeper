@@ -53,7 +53,6 @@ router.post('/', [
                 id: user.id
             }
         }
-
         // Signing and sending tokens
         jwt.sign(payload, config.get('jwtSecret'), {
             expiresIn: 360000000,
