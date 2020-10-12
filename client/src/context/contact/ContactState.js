@@ -25,7 +25,7 @@ const fakeContacts = [
         name: 'Jason Statham',
         email: "jason@gmail.com",
         phone: '897-5659-776',
-        type: 'personal'
+        type: 'professional'
     },
     {
         id: 3,
