@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 const ContactItem = ({ contact }) => {
     const { id, name, email, phone, type } = contact
+
     return (
         <div className="card bg-white">
             <h3 className="text-primary text-left">
@@ -10,11 +11,13 @@ const ContactItem = ({ contact }) => {
                 <span style={{ float: 'right' }}
                     className={'badge ' +
                         (type === 'professional' ? 'badge-success' : 'badge-primary')}
-                >{type.charAt(0).toUpperCase() + type.slice(1)} </span>
+                >
+                    {type.charAt(0).toUpperCase() + type.slice(1)}
+                </span>
             </h3>
             <ul className="list">
-                {email && (<li> <i className="fas fa-envelope-open"></i>  {email}</li>)}
-                {phone && (<li> <i className="fas fa-phone"></i>  {phone}</li>)}
+                {email && (<li> <i className="fas fa-envelope-open" />  {email}</li>)}
+                {phone && (<li> <i className="fas fa-phone" />  {phone}</li>)}
             </ul>
             <p>
                 <button className="btn btn-dark btn-sm">Edit</button>

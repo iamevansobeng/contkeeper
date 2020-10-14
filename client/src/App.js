@@ -11,7 +11,6 @@ const App = () => {
     <ContactState>
       <Router>
         <>
-
           <Navbar />
           <div className="container">
             <Switch>

@@ -13,7 +13,6 @@ const Contacts = () => {
             {contacts.map(contact =>
                 <ContactItem key={contact.id} contact={contact} />
             )}
-
         </>
     )
 }
